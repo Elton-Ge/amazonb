@@ -3,16 +3,17 @@ import Product from "../Components/Product";
 import axios from "axios";
 import LoadingBox from "../Components/LoadingBox";
 import MessageBox from "../Components/MessageBox";
-import {useDispatch, useSelector} from "react-redux";
+import {connect, useDispatch, useSelector} from "react-redux";
 import {listProducts} from "../redux/actions/productActions";
 
 function HomeScreen(props) {
-    const dispatch = useDispatch();
-    const productList = useSelector((state) => state.listProductsReducers)
-    const {loading,error,products} = productList;
+    const {productList, listProducts} = props
+    // const dispatch = useDispatch();
+    // const productList = useSelector((state) => state.listProductsReducers)
+    const {loading, error, products} = productList;
     useEffect(() => {
-        dispatch(listProducts())
-    }, [dispatch])
+        listProducts()
+    }, [listProducts])
     return (
         <>
             {
@@ -29,4 +30,6 @@ function HomeScreen(props) {
     );
 }
 
-export default HomeScreen;
+export default connect((state) => ({
+    productList: state.listProductsReducers
+}), {listProducts})(HomeScreen);
