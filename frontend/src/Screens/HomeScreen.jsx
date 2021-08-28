@@ -1,12 +1,22 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import Product from "../Components/Product";
-import data from '../data'
+import axios from "axios";
 
 function HomeScreen(props) {
+    const [products, setProducts] = useState([]);
+    useEffect(() => {
+        const fetchData = async () => {
+            const {result} = await axios.get('/api')
+            console.log(result)
+            setProducts(result)
+        }
+        fetchData()
+    }, [])
+
     return (
         <div className="row center">
             {
-                data.products.map((product) => (
+                products.map((product) => (
                     <Product key={product._id} product={product}/>
                 ))
             }

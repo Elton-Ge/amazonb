@@ -1,0 +1,24 @@
+{
+  "name": "amazonb",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --watch backend --exec node --experimental-modules backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Elton-Ge/amazonb.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Elton-Ge/amazonb/issues"
+  },
+  "homepage": "https://github.com/Elton-Ge/amazonb#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
