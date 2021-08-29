@@ -74,6 +74,7 @@ ul {
     padding: 0;
     margin: 0;
 }
+
 li {
     margin-top: 1rem;
 }
@@ -87,19 +88,24 @@ button {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
 button {
     background-color: #f8f8f8;
     cursor: pointer;
 }
+
 button:hover {
     border: 0.1rem #404040 solid;
 }
+
 button.primary {
-     background-color: #f0c040;
- }
+    background-color: #f0c040;
+}
+
 button.block {
     width: 100%;
 }
+
 /*row row center*/
 
 .row {
@@ -112,12 +118,15 @@ button.block {
 .row.center {
     justify-content: center;
 }
+
 .row.top {
     align-items: flex-start;
 }
+
 .col-1 {
     flex: 1 1 25rem;
 }
+
 .col-2 {
     flex: 2 1 50rem;
 }
@@ -132,7 +141,8 @@ img.medium {
     max-width: 29rem;
     width: 100%;
 }
-img.large{
+
+img.large {
     width: 100%;
 }
 
@@ -169,14 +179,15 @@ img.large{
 .success {
     color: #20a020;
 }
-.danger{
+
+.danger {
     color: #a02020;
 }
 
 .alert {
     padding: 1rem;
     border: 1px solid transparent;
-    border-radius:0.5rem;
+    border-radius: 0.5rem;
 }
 
 .alert-info {
@@ -184,7 +195,7 @@ img.large{
     background-color: #e0e0ff;
 }
 
-.alert-danger{
+.alert-danger {
     color: #a02020;
     background-color: #ffe0e0;
 }
