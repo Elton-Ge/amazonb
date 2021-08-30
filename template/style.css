@@ -22,6 +22,7 @@ header {
     /*grid-area: header;*/
     background-color: #203040;
 }
+
 main {
     padding: 1rem;
 }
@@ -30,25 +31,30 @@ footer {
     background-color: #203040;
     color: #fff;
 }
+
 /*Header*/
 header a {
     color: #fff;
     padding: 1rem;
 }
-a.brand{
+
+a.brand {
     color: #fff;
     font-size: 3rem;
     font-weight: bold;
 }
+
 /*Common*/
 h1 {
     font-size: 1.8rem;
     padding: 1rem 0;
 }
+
 h2 {
     font-size: 1.6rem;
     padding: 1rem 0;
 }
+
 a {
     text-decoration: none;
 }
@@ -66,7 +72,7 @@ a:hover {
     align-items: center;
 }
 
-.row.center{
+.row.center {
     justify-content: center;
 }
 
@@ -74,26 +80,31 @@ a:hover {
 img {
     border-radius: 0.5rem;
 }
+
 img.medium {
     max-width: 29rem;
-    width:100%;
+    width: 100%;
 }
 
 .card {
-    border:1px solid #000;
+    border: 1px solid #000;
     background-color: #f8f8f8;
     border-radius: 0.5rem;
     margin: 1rem;
 }
+
 .card-body {
     padding: 1rem;
 }
+
 .card-body > * {
     margin-bottom: 0.5rem;
 }
+
 .price {
     font-size: 2rem;
 }
+
 .rating span {
     color: #ff8000;
     margin: 0.1rem;

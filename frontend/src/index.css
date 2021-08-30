@@ -49,14 +49,16 @@ a.brand {
     font-size: 3rem;
     font-weight: bold;
 }
+
 .badge {
-    font-size:1.4rem;
+    font-size: 1.4rem;
     background-color: #f02020;
-    color:#fff;
+    color: #fff;
     border-radius: 50%;
     padding: 0.2rem 0.7rem;
     margin-left: 0.1rem;
 }
+
 /*Common*/
 h1 {
     font-size: 1.8rem;
@@ -137,7 +139,8 @@ button.block {
 .col-2 {
     flex: 2 1 50rem;
 }
-.min-30{
+
+.min-30 {
     min-width: 30rem;
 }
 
@@ -145,10 +148,12 @@ button.block {
 img {
     border-radius: 0.5rem;
 }
-img.small{
-    max-width:5rem;
+
+img.small {
+    max-width: 5rem;
     width: 100%;
 }
+
 img.medium {
     max-width: 29rem;
     width: 100%;
@@ -210,4 +215,46 @@ img.large {
 .alert-danger {
     color: #a02020;
     background-color: #ffe0e0;
+}
+
+/*form*/
+.form {
+    margin: 0 auto;
+    max-width: 60rem;
+    width: 100%;
+}
+
+.form > div {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+.form label {
+    margin: 1rem 0;
+    display: block;
+}
+
+.form button {
+    margin: 1rem 0;
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown-content {
+    position: absolute;
+    display: none;
+    right: 0;
+    min-width: 12rem;
+    z-index: 1;
+    padding: 1rem;
+    background-color: #203040;
+    margin-top:0.4rem;
+    border-radius: 0.5rem;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
 }
