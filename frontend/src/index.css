@@ -201,6 +201,10 @@ img.large {
     color: #a02020;
 }
 
+.loading {
+    display: block !important;
+}
+
 .alert {
     padding: 1rem;
     border: 1px solid transparent;
@@ -252,9 +256,10 @@ img.large {
     z-index: 1;
     padding: 1rem;
     background-color: #203040;
-    margin-top:0.4rem;
+    margin-top: 0.4rem;
     border-radius: 0.5rem;
 }
+
 .dropdown:hover .dropdown-content {
     display: block;
 }

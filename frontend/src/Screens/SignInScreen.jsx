@@ -5,7 +5,7 @@ import { signin } from "../redux/actions/userActions";
 import LoadingBox from "../Components/LoadingBox";
 import MessageBox from "../Components/MessageBox";
 
-function SigninScreen(props) {
+function SignInScreen(props) {
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
   const dispatch = useDispatch();
@@ -60,8 +60,8 @@ function SigninScreen(props) {
         <div>
           <Link
             to={
-              "/register"
-              // redirect === "/" ? "register" : "register?redirect=" + redirect
+              // `/register?redirect=${redirect}`
+              redirect === "/" ? "/register" : "/register?redirect=" + redirect
             }
             className="button secondary text-center"
           >
@@ -73,4 +73,4 @@ function SigninScreen(props) {
   );
 }
 
-export default SigninScreen;
+export default SignInScreen;
