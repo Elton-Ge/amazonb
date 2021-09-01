@@ -7,10 +7,11 @@ import { useDispatch, useSelector } from "react-redux";
 import SignInScreen from "./Screens/SignInScreen";
 import { signout } from "./redux/actions/userActions";
 import RegisterScreen from "./Screens/RegisterScreen";
+import ShippingScreen from "./Screens/ShippingScreen";
 
 function App() {
-  const cart = useSelector((state) => state.cartReducers);
-  const { cartItems } = cart;
+  const cartasd = useSelector((state) => state.cartReducers);
+  const { cartItems } = cartasd;
   const { userInfo } = useSelector((state) => state.userSignInReducer);
   const dispatch = useDispatch();
   const signoutHandler = () => {
@@ -54,6 +55,7 @@ function App() {
           <Route path={"/product/:id"} component={ProductScreen} />
           <Route path={"/signin"} component={SignInScreen} />
           <Route path={"/register"} component={RegisterScreen} />
+          <Route path={"/shipping"} component={ShippingScreen} />
           <Route path={"/"} component={HomeScreen} exact />
         </Switch>
       </main>

@@ -85,7 +85,7 @@ function RegisterScreen(props) {
           <Link
             to={
               // `/signin?redirect=${redirect}`
-              redirect === "/" ? "/register" : "/register?redirect=" + redirect
+              redirect === "/" ? "/signin" : "/signin?redirect=" + redirect
             }
             className="button secondary text-center"
           >
