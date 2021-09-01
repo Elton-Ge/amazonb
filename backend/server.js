@@ -4,6 +4,7 @@ import dotenv from "dotenv";
 import userRouter from "./routers/userRouter.js";
 import productRouter from "./routers/productRouter.js";
 import bodyParser from "body-parser";
+import orderRouter from "./routers/orderRouter.js";
 
 dotenv.config();
 const app = express();
@@ -23,6 +24,7 @@ mongoose.connect(
 
 app.use("/api/users", userRouter);
 app.use("/api/products", productRouter);
+app.use("/api/orders", orderRouter);
 app.get("/", (req, res) => {
   res.send("server is alive");
 });

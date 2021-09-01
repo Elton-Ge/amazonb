@@ -8,6 +8,8 @@ import SignInScreen from "./Screens/SignInScreen";
 import { signout } from "./redux/actions/userActions";
 import RegisterScreen from "./Screens/RegisterScreen";
 import ShippingScreen from "./Screens/ShippingScreen";
+import PaymentMethodScreen from "./Screens/PaymentMethodScreen";
+import PlaceOrderScreen from "./Screens/PlaceOrderScreen";
 
 function App() {
   const cartasd = useSelector((state) => state.cartReducers);
@@ -56,6 +58,8 @@ function App() {
           <Route path={"/signin"} component={SignInScreen} />
           <Route path={"/register"} component={RegisterScreen} />
           <Route path={"/shipping"} component={ShippingScreen} />
+          <Route path={"/payment"} component={PaymentMethodScreen} />
+          <Route path={"/placeorder"} component={PlaceOrderScreen} />
           <Route path={"/"} component={HomeScreen} exact />
         </Switch>
       </main>
