@@ -23,7 +23,7 @@ export const isAuth = (req, res, next) => {
       if (err) {
         res.status(401).send({ message: "Invalid token" });
       } else {
-        req.user = decode;
+        req.user = decode; //jwt.sign({payload})
         next();
       }
     });

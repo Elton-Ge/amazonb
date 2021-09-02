@@ -121,6 +121,10 @@ button.block {
   width: 100%;
 }
 
+button.small {
+  font-size:12px;
+}
+
 /*row row center*/
 
 .row {
@@ -226,6 +230,10 @@ img.large {
   color: #a02020;
   background-color: #ffe0e0;
 }
+.alert-success {
+  color: #20a020;
+  background-color: #bdf1bd;
+}
 
 /*form*/
 .form {
@@ -281,4 +289,20 @@ img.large {
 .checkout-steps > div.active {
   border-top: 3px solid #f08000;
   color: #f08000;
+}
+/*table*/
+.table{
+  width: 100%;
+  border-collapse: collapse;
+}
+.table tbody tr:nth-of-type(odd){
+  background-color: #f4f4f4;
+}
+.table td, .table th{
+  text-align: left;
+  border:1px solid #e4e4e4;
+  padding: .5rem;
+}
+.table button{
+  margin: 0 2px;
 }

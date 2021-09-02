@@ -10,7 +10,12 @@ import {
   userRegisterReducer,
   userSignInReducer,
 } from "./reducers/userReducers";
-import { orderCreateReducer } from "./reducers/orderReducers";
+import {
+  orderCreateReducer,
+  orderDetailsReducer,
+  orderListMineReducer,
+  orderPayReducer
+} from "./reducers/orderReducers";
 
 const reducer = combineReducers({
   listProductsReducers,
@@ -18,7 +23,10 @@ const reducer = combineReducers({
   cartReducers,
   userSignInReducer,
   userRegisterReducer,
-  orderCreateReducer
+  orderCreateReducer,
+  orderDetailsReducer,
+  orderPayReducer,
+  orderListMineReducer
 });
 const store = createStore(reducer, composeWithDevTools(applyMiddleware(thunk)));
 export default store;
